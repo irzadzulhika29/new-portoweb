@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-white text-gray-900 transition-colors duration-200 ease-in-out
+           dark:bg-gray-900 dark:text-gray-100;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-gray-900 dark:text-white;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1200px] mx-auto px-4;
+  }
+  
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-600 text-white rounded-lg 
+           hover:bg-blue-700 transition-all duration-300
+           dark:bg-blue-500 dark:hover:bg-blue-600;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md
+           transition-all duration-200 ease-in-out;
+  }
+  
+  .section-padding {
+    @apply py-8 md:py-24;
+  }
+
+  .progress-bar {
+    width: 0;
+    transition: width 1s ease-out;
+  }
+
+  .progress-bar.animate {
+    width: var(--progress-width);
+  }
+
+  .nav-link {
+    @apply text-gray-700 hover:text-blue-600 transition-colors duration-200
+           dark:text-gray-300 dark:hover:text-blue-400;
+  }
+
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  .floating-slow {
+    animation: floating 4s ease-in-out infinite;
+  }
+
+  .floating-slower {
+    animation: floating 5s ease-in-out infinite;
+  }
+
+  .parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Theme transition */
+* {
+  @apply transition-colors duration-200;
+}
