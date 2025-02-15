@@ -53,22 +53,6 @@ const Projects = () => {
       tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
       liveLink: "https://carebites.vercel.app/",
       githubLink: "https://github.com/irzadzulhika29/carebites"
-    },
-    {
-      title: "Task Management App",
-      description: "A beautiful task management application with drag-and-drop functionality",
-      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
-      tags: ["React", "Firebase", "Tailwind CSS"],
-      liveLink: "#",
-      githubLink: "#"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Real-time weather application with beautiful UI and detailed forecasts",
-      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      tags: ["React", "API Integration", "CSS3"],
-      liveLink: "#",
-      githubLink: "#"
     }
   ];
 
