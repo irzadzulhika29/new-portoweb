@@ -47,12 +47,12 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-Commerce Website",
-      description: "A full-featured e-commerce platform built with React and Node.js",
-      image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      tags: ["React", "Node.js", "MongoDB", "Redux"],
-      liveLink: "#",
-      githubLink: "#"
+      title: "CareBites: Nourishing Lives, Supporting Communities",
+      description: "A feature-rich e-commerce platform built with React and Node.js, offering a seamless experience while driving positive social change",
+      image: "../src/assets/Screenshot_15-2-2025_235242_carebites.vercel.app.jpeg",
+      tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+      liveLink: "https://carebites.vercel.app/",
+      githubLink: "https://github.com/irzadzulhika29/carebites"
     },
     {
       title: "Task Management App",
@@ -71,23 +71,23 @@ const Projects = () => {
       githubLink: "#"
     }
   ];
-  
+
   return (
     <section id="projects" className="section-padding bg-white dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">
           Featured Projects
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {projects.map((project, index) => (
-            <div 
+            <div
               key={index}
               className="bg-gray-50 dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col"
               onClick={fire}
               onMouseEnter={fire}
             >
-              <div className="relative group aspect-video">
+              <div className="relative group w-full h-64">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -112,7 +112,9 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-              
+
+
+
               <div className="p-4 sm:p-6 flex-grow">
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm sm:text-base">
