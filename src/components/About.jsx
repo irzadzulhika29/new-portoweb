@@ -1,4 +1,5 @@
 import astnout from '../assets/astronot.png';
+import profile from '../assets/DSC09736.png';
 
 const About = () => {
     return (
@@ -7,8 +8,17 @@ const About = () => {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8">
                     About Me
                 </h2>
+
+                {/* My Photo - Centered above the text and astronaut */}
+                <div className="flex justify-center mb-8">
+                    <img
+                    src={profile} // Replace with the actual path to your photo
+                    alt="Your Photo"
+                    className="rounded-full w-48 h-48 object-cover shadow-lg"
+                    />
+                </div>
                 {/* Mobile image - only shows on mobile */}
-                <div className="md:hidden mb-8 relative max-w-md mx-auto">
+                <div className=" md:hidden mb-8 relative max-w-md mx-auto">
                     <img
                         src={astnout}
                         alt="Floating Astronaut"

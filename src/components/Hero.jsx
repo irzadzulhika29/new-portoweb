@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const Hero = () => {
   const [text, setText] = useState('');
-  const fullText = "Welcome to my Portfolio";
+  const fullText = "Welcome to Irza's Portfolio";
   const [showCursor, setShowCursor] = useState(true);
   const [scrollY, setScrollY] = useState(0);
 
